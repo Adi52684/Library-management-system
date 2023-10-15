@@ -1,0 +1,1264 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* LandinPage */
+
+*{
+  margin: 0;
+  padding: 0;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+.lmain{
+  width: 100%;
+  height: 100vh;
+}
+
+video{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.lcontent{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.loverlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.6);
+}
+
+/* Homepage */
+.hp{
+  
+}
+
+
+/* Nav Bar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #a20740; */
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,211,233,1) 17%);}
+
+.logo img{
+  height: px;
+  width: 240px;
+  
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #86af4c00;
+  color: rgb(2, 1, 1);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-buttons button:hover {
+  background-color: #01010128;
+}
+
+/* Carousel */
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-nav button {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.search-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.search-bar input[type="text"] {
+  width: 80vh;
+  height: 20px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #282c344f;
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: 1px solid #28a745;
+  color: #28a745;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-bar button:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Card Book */
+
+.vbcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  /* background: rgb(253,29,29);
+background: linear-gradient(90deg, rgba(253,29,29,1) 19%, rgba(117,58,180,1) 61%, rgba(252,176,69,1) 100%); */
+/* background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 74%); */
+background: rgb(238,174,202);
+background: linear-gradient(201deg, rgba(238,174,202,1) 0%, rgba(95,182,213,1) 100%);
+}
+
+.vbcard {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 9px 11px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vbcard img {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 5px;
+}
+
+.vbname {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.vbbuttons {
+  margin-top: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button.view {
+  background-color: #2196F3;
+}
+
+button.delete {
+  background-color: #F44336;
+}
+
+ul{
+  list-style: none;
+}
+
+/* Footer.css */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  padding: 20px;
+  background: rgb(105,105,105);
+background: linear-gradient(319deg, rgba(105,105,105,1) 26%, rgba(17,17,17,1) 62%);
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.privacy-button {
+  background-color: #0b0b0b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.privacy-button:hover{
+  background-color: #282c34;
+}
+
+
+
+/* Alogin */
+
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+.aldiagonal-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  /* background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%); */
+}
+
+.lldiagonal {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: top left;
+  transform: skewY(-31deg);
+  box-shadow: 0px 0px 20px 10px #000000;
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
+/* background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+}
+
+.alcontainer{
+  max-width: 480px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 30px 20px;
+  background-color: #fbfbfb;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.2);
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 25%, rgba(148,211,233,1) 92%);
+  background: rgb(140, 253, 255);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%);
+}
+
+.alsignup-text {
+  position: absolute;
+  top: 50%;
+  left: -15vh;
+  transform: translateY(-50%);
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.alsignup-text p {
+  margin: 0;
+  font-size:xx-large;
+}
+
+.alsignup-text a {
+  color: red; 
+  text-decoration: underline;
+}
+
+.alogin-form-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgb(140, 253, 255);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%); */
+}
+
+.alregistration-form {
+  width: 80%;
+}
+
+.aladmin{
+  font-size: 40px;
+  text-shadow: 5px 2px 4px  #000000da;
+}
+
+.alform-group {
+  margin-bottom: 20px;
+}
+
+.alform-group label {
+  display:block;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.alform-group input {
+  width: 45vh;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow:0px 0px 20px 20px rgba(0, 0, 0, 0.2);;
+}
+
+.alerror {
+  color: rgb(255, 0, 0);
+}
+
+.alogin-button {
+  background-color: #00ffff; 
+  color: rgb(255, 255, 255); 
+  padding: 10px 0px; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  width: 100px;
+}
+
+.alogin-button:hover {
+  background-color: #45a049;
+}
+
+/* Aregister */
+
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+.ardiagonal-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  /* background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%); */
+}
+
+.arcontainer{
+  max-width: 550px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 30px 20px;
+  background-color: #fbfbfb;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.2);
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 25%, rgba(148,211,233,1) 92%);
+  background: rgb(140, 253, 255);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%);
+}
+
+.arsignup-text {
+  position: absolute;
+  top: 50%;
+  left: -15vh;
+  transform: translateY(-50%);
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.arsignup-text p {
+  margin: 0;
+  font-size:xx-large;
+}
+
+.arsignup-text a {
+  color: red; 
+  text-decoration: underline;
+}
+
+.aregister-form-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgb(140, 253, 255);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%); */
+}
+
+.aregistration-form {
+  width: 80%;
+}
+
+.aradmin{
+  font-size: 40px;
+  text-shadow: 5px 2px 4px  #000000da;
+}
+
+.arform-group {
+  margin-bottom: 20px;
+}
+
+.arform-group label {
+  display:block;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.arform-group input 
+{
+  width: 45vh;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow:0px 0px 20px 20px rgba(0, 0, 0, 0.2);;
+}
+
+.arform-group textarea{
+  width: 450px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.arerror {
+  color: rgb(255, 0, 0);
+}
+
+.aregister-button {
+  background-color: #00ffff; 
+  color: rgb(255, 255, 255); 
+  padding: 10px 0px; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  width: 100px;
+}
+
+.aregister-button:hover {
+  background-color: #45a049;
+}
+
+/* Llogin */
+
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+.lldiagonal-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  /* background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%); */
+}
+
+.lldiagonal {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: top left;
+  transform: skewY(-31deg);
+  box-shadow: 0px 0px 20px 10px #000000;
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
+/* background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+}
+
+.llcontainer{
+  max-width: 480px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 30px 20px;
+  background-color: #fbfbfb;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.2);
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 25%, rgba(148,211,233,1) 92%);
+  background: rgb(140, 253, 255);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%);
+}
+
+.llsignup-text {
+  position: absolute;
+  top: 50%;
+  left: -15vh;
+  transform: translateY(-50%);
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.llsignup-text p {
+  margin: 0;
+  font-size:xx-large;
+}
+
+.llsignup-text a {
+  color: red; 
+  text-decoration: underline;
+}
+
+.llogin-form-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgb(140, 253, 255);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%); */
+}
+
+.llregistration-form {
+  width: 80%;
+}
+
+.lladmin{
+  font-size: 40px;
+  text-shadow: 5px 2px 4px  #000000da;
+}
+
+.llform-group {
+  margin-bottom: 20px;
+}
+
+.llform-group label {
+  display:block;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.llform-group input {
+  width: 45vh;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow:0px 0px 20px 20px rgba(0, 0, 0, 0.2);;
+}
+
+.llerror {
+  color: rgb(255, 0, 0);
+}
+
+.llogin-button {
+  background-color: #00ffff; 
+  color: rgb(255, 255, 255); 
+  padding: 10px 0px; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  width: 100px;
+}
+
+.llogin-button:hover {
+  background-color: #45a049;
+}
+
+/* Lregister */
+
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+.lrdiagonal-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  /* background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%); */
+}
+
+.lrcontainer{
+  max-width: 550px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 30px 20px;
+  background-color: #fbfbfb;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.2);
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 25%, rgba(148,211,233,1) 92%);
+  background: rgb(140, 253, 255);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%);
+}
+
+.lrsignup-text {
+  position: absolute;
+  top: 50%;
+  left: -15vh;
+  transform: translateY(-50%);
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.lrsignup-text p {
+  margin: 0;
+  font-size:xx-large;
+}
+
+.lrsignup-text a {
+  color: red; 
+  text-decoration: underline;
+}
+
+.lregister-form-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgb(140, 253, 255);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%); */
+}
+
+.lregistration-form {
+  width: 80%;
+}
+
+.lradmin{
+  font-size: 40px;
+  text-shadow: 5px 2px 4px  #000000da;
+}
+
+.lrform-group {
+  margin-bottom: 20px;
+}
+
+.lrform-group label {
+  display:block;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lrform-group input 
+{
+  width: 45vh;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow:0px 0px 20px 20px rgba(0, 0, 0, 0.2);;
+}
+
+.lrform-group textarea{
+  width: 450px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.lrerror {
+  color: rgb(255, 0, 0);
+}
+
+.lregister-button {
+  background-color: #00ffff; 
+  color: rgb(255, 255, 255); 
+  padding: 10px 0px; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  width: 100px;
+}
+
+.lregister-button:hover {
+  background-color: #45a049;
+}
+
+/* Slogin */
+
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+.sldiagonal-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  /* background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%); */
+}
+
+.slcontainer{
+  max-width: 480px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 30px 20px;
+  background-color: #fbfbfb;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.2);
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 25%, rgba(148,211,233,1) 92%);
+  background: rgb(140, 253, 255);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%);
+}
+
+.slsignup-text {
+  position: absolute;
+  top: 50%;
+  left: -15vh;
+  transform: translateY(-50%);
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.slsignup-text p {
+  margin: 0;
+  font-size:xx-large;
+}
+
+.slsignup-text a {
+  color: red; 
+  text-decoration: underline;
+}
+
+.slogin-form-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgb(140, 253, 255);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%); */
+}
+
+.slregistration-form {
+  width: 80%;
+}
+
+.sladmin{
+  font-size: 40px;
+  text-shadow: 5px 2px 4px  #000000da;
+}
+
+.slform-group {
+  margin-bottom: 20px;
+}
+
+.slform-group label {
+  display:block;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.slform-group input {
+  width: 45vh;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow:0px 0px 20px 20px rgba(0, 0, 0, 0.2);;
+}
+
+.slerror {
+  color: rgb(255, 0, 0);
+}
+
+.slogin-button {
+  background-color: #00ffff; 
+  color: rgb(255, 255, 255); 
+  padding: 10px 0px; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  width: 100px;
+}
+
+.slogin-button:hover {
+  background-color: #45a049;
+}
+
+/* Sregister */
+
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+.srdiagonal-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  /* background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%); */
+}
+
+.srcontainer{
+  max-width: 480px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 30px 20px;
+  background-color: #fbfbfb;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.2);
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 25%, rgba(148,211,233,1) 92%);
+  background: rgb(140, 253, 255);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%);
+}
+
+.srsignup-text {
+  position: absolute;
+  top: 50%;
+  left: -15vh;
+  transform: translateY(-50%);
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.srsignup-text p {
+  margin: 0;
+  font-size:xx-large;
+}
+
+.srsignup-text a {
+  color: red; 
+  text-decoration: underline;
+}
+
+.sregister-form-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgb(140, 253, 255);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%); */
+}
+
+.sregistration-form {
+  width: 80%;
+}
+
+.sradmin{
+  font-size: 40px;
+  text-shadow: 5px 2px 4px  #000000da;
+}
+
+.srform-group {
+  margin-bottom: 20px;
+}
+
+.srform-group label {
+  display:block;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.srform-group input 
+{
+  width: 45vh;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow:0px 0px 20px 20px rgba(0, 0, 0, 0.2);;
+}
+
+.srform-group textarea{
+  width: 450px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.srerror {
+  color: rgb(255, 0, 0);
+}
+
+.sregister-button {
+  background-color: #00ffff; 
+  color: rgb(255, 255, 255); 
+  padding: 10px 0px; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  width: 100px;
+}
+
+.sregister-button:hover {
+  background-color: #45a049;
+}
+
+/* ViewBook */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+.vbcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.vbcard {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 9px 11px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vbcard img {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 5px;
+}
+
+.vbbuttons {
+  margin-top: 10px;
+}
+
+.vbvuttons button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button.view {
+  background-color: #2196F3;
+}
+
+button.delete {
+  background-color: #F44336;
+}
+
+ul{
+  list-style: none;
+}
+
+/* Viewlibrarian */
+
+.vlbody {
+  font-family: Arial, sans-serif;
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLJwOHmHp20fXwy9I9000H-GHTFe1g1lPWcQ&usqp=CAU);
+  
+}
+
+.vlcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.vlcard {
+  background-color: #e78c46b8;
+  border-radius: 5px;
+  padding: 10px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7%;
+}
+
+.vlcard img {
+  width: 100%;
+  max-height: 200px;
+  border-radius: 5px;
+}
+
+.vlbuttons {
+  margin-top: 10px;
+}
+
+.vlbuttons button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button.edit {
+  background-color: #0879d6;
+}
+
+button.delete {
+  background-color: #F44336;
+}
+
+ul{
+  list-style: none;
+}
+
+/* Viewstudents */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+.vscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.vscard {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 9px 11px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vscard img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.vsbuttons {
+  margin-top: 10px;
+}
+
+.vsbuttons button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button.edit {
+  background-color: #2196F3;
+}
+
+button.delete {
+  background-color: #F44336;
+}
+
+.vscard ul{
+  list-style: none;
+}
+
+/* login  */
+
+.lmain{
+  background: rgb(34,193,195);
+  background: linear-gradient(319deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%);
+  
+}
+
+.lcontainer{
+  max-width: 480px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 30px 20px;
+  background-color: #fbfbfb;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.2);
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 25%, rgba(148,211,233,1) 92%);
+  text-align: center;
+  align-items: center; 
+  justify-content: center;
+  position: absolute;
+  top: 200px;
+  right: 700px;
+  width: 50%;
+  height: 50%;
+  display: flex;
+}
+
+.lbuttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.lbuttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  background-color: #50ff5ba2;
+  color: #000000;
+}
+
+.lbuttons button:hover{
+  background-color: #282c3400;
+}
+
+/* Register */
+
+.rbg{
+  background: rgb(34,193,195);
+  background: linear-gradient(319deg, rgba(34,193,195,1) 0%, rgba(250,150,39,0.9582366589327146) 100%);
+  
+}
+
+.rcontainer{
+  max-width: 480px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 30px 20px;
+  background-color: #fbfbfb;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.2);
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 25%, rgba(148,211,233,1) 92%);
+  text-align: center;
+  align-items: center; 
+  justify-content: center;
+  position: absolute;
+  top: 200px;
+  right: 700px;
+  width: 50%;
+  height: 50%;
+  display: flex;
+}
+
+.rbuttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.rbuttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  background-color: #50ff5ba2;
+  color: #000000;
+}
+
+.rbuttons button:hover{
+  background-color: #282c3400;
+}
